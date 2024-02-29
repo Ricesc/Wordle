@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+    font-family: "Anta", sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#guess-input:focus {
+    outline-color: #7eb77f;
+}
+
+#guess-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #7eb77f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+#retry-button {
+    display: none;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f92a82;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+
+#grid {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.letter {
+    padding: 3px;
+    margin: 3px;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.input-area {
+    margin: 30px;
+}
