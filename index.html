@@ -10,14 +10,16 @@
 </head>
 
 <body>
-    <h1>Wordle PPY</h1>
-    <input type="text" id="guess-input" required maxlength="5">
-    <button id="guess-button">Intentar</button>
-    <button id="retry-button">Jugar de nuevo</button>
-    <div id="grid">
+    <div id="container">
+        <h1>Wordle PPY</h1>
+        <input type="text" id="guess-input" onkeydown="return /[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]/i.test(event.key)" maxlength="5">
+        <button id="guess-button">Intentar</button>
+        <button id="retry-button">Jugar de nuevo</button>
+        <div id="grid">
 
+        </div>
     </div>
-    <p id="guesses"></p>
+    <div id="guesses"></div>
 </body>
 
 </html>
